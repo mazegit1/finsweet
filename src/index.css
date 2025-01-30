@@ -1,0 +1,9 @@
+@import "tailwindcss";
+.circle-animation {
+    transition: stroke-dashoffset 2s ease;
+  }
+  
+  .circle-animate {
+    stroke-dashoffset: 0;
+  }
+  
