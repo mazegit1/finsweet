@@ -40,12 +40,12 @@ const Navbar = () => {
     >
       {/* Logo */}
       <a href="/" className='flex items-center gap-2 text-3xl sm:text-4xl font-semibold'>
-        <HiCodeBracket/> Finsweet
+        <HiCodeBracket /> Finsweet
       </a>
       
       {/* Desktop & Mid-Sized Menu */}
       <div className="hidden md:flex items-center gap-6 lg:gap-12 text-lg sm:text-lg lg:text-2xl">
-        {["Home", "Products", "About", "Blog", "Contact", "Pricing"].map((link, index) => (
+        {["Products", "About", "Blog", "Contact", "Pricing"].map((link, index) => (
           <motion.a 
             key={index} 
             href={`/${link.toLowerCase()}`} 
@@ -75,7 +75,7 @@ const Navbar = () => {
         initial={{ x: "100%" }} 
         animate={{ x: menuOpen ? "0%" : "100%" }} 
         transition={{ duration: 0.3, ease: "easeInOut" }} 
-        className="fixed top-0 right-0 w-72 sm:w-80 h-full bg-white shadow-lg p-6 flex flex-col gap-6 md:hidden z-50"
+        className="fixed top-0 right-0 w-full h-full bg-white z-50 flex flex-col gap-6 p-6"
       >
         {/* Close Button */}
         <div className="text-3xl self-end cursor-pointer" onClick={() => setMenuOpen(false)}>
@@ -83,11 +83,11 @@ const Navbar = () => {
         </div>
 
         {/* Menu Links */}
-        {["Home", "Products", "About", "Blog", "Contact", "Pricing"].map((link, index) => (
+        {["Products", "About", "Blog", "Contact", "Pricing"].map((link, index) => (
           <motion.a 
             key={index} 
             href={`/${link.toLowerCase()}`} 
-            className="text-lg sm:text-xl hover:text-gray-600 transition-all py-2"
+            className="text-lg sm:text-xl bg-white w-fit rounded-xl px-12 hover:bg-black active:text-white active:bg-black hover:text-white  transition-all py-2"
             variants={linkVariants}
             initial="hidden"
             animate="visible"
