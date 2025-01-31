@@ -46,7 +46,7 @@ const Navbar = () => {
       
       {/* Desktop & Mid-Sized Menu */}
       <div className="hidden md:flex items-center gap-6 lg:gap-12 text-lg sm:text-lg lg:text-2xl">
-        {["Products", "About", "Blog", "Contact", "Pricing"].map((link, index) => (
+        {["Product", "About", "Blog", "Contact", "Pricing"].map((link, index) => (
           <motion.a 
             key={index} 
             href={`/${link.toLowerCase()}`} 
@@ -84,7 +84,7 @@ const Navbar = () => {
         </div>
 
         {/* Menu Links */}
-        {["Products", "About", "Blog", "Contact", "Pricing"].map((link, index) => (
+        {["Product", "About", "Blog", "Contact", "Pricing"].map((link, index) => (
           <motion.a 
             key={index} 
             href={`/${link.toLowerCase()}`} 
