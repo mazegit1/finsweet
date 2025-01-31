@@ -30,8 +30,8 @@ const Footer = () => {
   };
 
   return (
-    <div className="footer pt-20 overflow-x-hidden">
-      <div className="footer-question text-center gap-6">
+    <div className="footer  overflow-x-hidden">
+      <div className="footer-question py-20 bg-gradient-to-r from-white to-blue-50 text-center gap-6">
         <motion.h1
           className="text-4xl sm:text-6xl mb-8 font-bold text-center"
           initial={{ opacity: 0 }}
@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
 
       <motion.div
-        className="footer-main bg-[#1D2130] text-white px-6 sm:px-14 py-12 mt-20"
+        className="footer-main bg-[#1D2130] text-white px-6 sm:px-14 py-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}

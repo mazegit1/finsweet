@@ -37,6 +37,7 @@ const Navbar = () => {
       initial="hidden" 
       animate="visible" 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolling ? 'bg-white/60 backdrop-blur-sm' : 'bg-white'} py-5 px-6 sm:px-10 md:px-16 lg:px-20 flex items-center justify-between`}
+
     >
       {/* Logo */}
       <a href="/" className='flex items-center gap-2 text-3xl sm:text-4xl font-semibold'>
@@ -75,7 +76,7 @@ const Navbar = () => {
         initial={{ x: "100%" }} 
         animate={{ x: menuOpen ? "0%" : "100%" }} 
         transition={{ duration: 0.3, ease: "easeInOut" }} 
-        className="fixed top-0 right-0 w-full h-full bg-white z-50 flex flex-col gap-6 p-6"
+        className="fixed top-0 right-0 w-full h-[100vh] bg-white z-50 flex flex-col gap-6 p-6"
       >
         {/* Close Button */}
         <div className="text-3xl self-end cursor-pointer" onClick={() => setMenuOpen(false)}>

@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <>
       <ToastContainer />
-      <div className="flex bg-gray-100 pt-48 border-b-4 border-b-[#E0E4FC] flex-col items-center justify-center min-h-screen py-10 px-4 sm:px-6 lg:px-8">
+      <div className="flex  bg-gradient-to-r from-white to-blue-50 pt-48 border-b-4 border-b-[#E0E4FC] flex-col items-center justify-center min-h-screen py-10 px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-800">
             The Best Software to Grow <br /> your Sales and Services

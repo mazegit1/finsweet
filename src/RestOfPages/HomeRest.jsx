@@ -21,10 +21,10 @@ const ads = [ad1, ad2, ad3, ad4, ad5];
 const HomeRest = () => {
   return (
     <>
-      <div className="p-6 md:p-12">
+      <div className="p-6 md:p-12 ">
         <div className="text-center mb-12">
           <motion.h2
-            className="text-transparent bg-clip-text bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] font-semibold text-xl md:text-3xl"
+            className="text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-50 font-semibold text-xl md:text-3xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -158,7 +158,7 @@ const HomeRest = () => {
         </motion.div>
       </motion.div>
 
-      <div className="ads flex gap-10 md:gap-20 items-center justify-center py-10 flex-wrap">
+      <div className="ads  flex gap-10 md:gap-20 items-center justify-center py-10 flex-wrap">
         {ads.map((ad, index) => (
           <motion.img
             key={index}
@@ -173,7 +173,7 @@ const HomeRest = () => {
         ))}
       </div>
       <motion.div 
-  className="discover py-20 flex flex-col md:flex-row items-center justify-between px-8 md:px-20 lg:px-40 max-w-full overflow-hidden"
+  className="discover py-20 flex flex-col md:flex-row bg-gradient-to-r from-white to-blue-50 items-center justify-between px-8 md:px-20 lg:px-40 max-w-full overflow-hidden"
   initial={{ opacity: 0, y: 50 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.8, ease: "easeOut" }}
@@ -226,7 +226,7 @@ const HomeRest = () => {
   </motion.div>
 </motion.div>
 
-    <div className="features px-4 sm:px-8">
+    <div className="features  px-4 sm:px-8">
   <div className="title text-center text-3xl sm:text-6xl font-bold">
     <h1>Features</h1>
   </div>
@@ -265,7 +265,7 @@ const HomeRest = () => {
   </div>
 </div>
 <motion.div 
-      className="results py-20 px-6 sm:px-10 lg:px-20"
+      className="results bg-gradient-to-r from-white to-blue-50 py-20 px-6 sm:px-10 lg:px-20"
       whileInView={{ opacity: 1, translateY: 0 }} 
       initial={{ opacity: 0, translateY: 100 }} 
       transition={{ duration: 0.8 }}
