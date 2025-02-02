@@ -78,7 +78,7 @@ const Product = () => {
         {/* User Welcome */}
         <div className="flex flex-col sm:flex-row items-center justify-between mb-6 gap-2">
           <h3 className="text-lg font-semibold flex items-center gap-2">
-            <FaUser className="text-gray-600" /> Hi, User
+            <FaUser className="text-gray-600" /> Hi, <span className="text-purple-700">User</span>
           </h3>
           <h3 className="text-lg font-semibold text-center sm:text-left">Welcome to Dashboard</h3>
         </div>
